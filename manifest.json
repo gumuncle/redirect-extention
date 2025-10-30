@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Domain Redirector",
+    "version": "2.0",
+    "description": "現在のドメインをリダイレクト対象に登録できます。",
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess",
+        "storage",
+        "tabs"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Domain Redirector"
+    }
+}
