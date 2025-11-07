@@ -9,6 +9,7 @@ You can register the current domain directly from the popup window — no need t
 
 - Redirect any domain to a specified URL  
 - Add redirect rules directly from the popup  
+- Delete rules from the popup  
 - Persistent rules (saved in Chrome local storage)  
 - Uses **Declarative Net Request API** (Manifest V3 compliant)  
 - Lightweight and fast (no background polling)
@@ -40,6 +41,7 @@ You can register the current domain directly from the popup window — no need t
 3. Enter the redirect destination (e.g. `https://newsite.com`)  
 4. Click **Add**  
 5. Next time you visit `example.com`, it will automatically redirect to `newsite.com`
+6. To remove a rule, click the **削除** button next to it in the list
 
 ---
 
@@ -101,7 +103,6 @@ MIT License © 2025 gumuncle
 
 ## 💡 Future Ideas
 
-- Add “Delete rule” feature in popup  
 - Support regex or path-based redirects  
 - Sync rules across devices using `chrome.storage.sync`
 

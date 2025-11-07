@@ -11,14 +11,35 @@
             padding: 10px;
         }
 
-        input,
-        button {
+        /* Only the main input/button should be full width */
+        input#redirect-url,
+        button#add-rule {
             width: 100%;
             margin-top: 6px;
         }
 
         ul {
             padding-left: 16px;
+        }
+
+        /* Rule list styling */
+        .rule-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .rule-text {
+            flex: 1 1 auto;
+            word-break: break-all;
+        }
+
+        .delete-btn {
+            flex: 0 0 auto;
+            padding: 2px 8px;
+            margin-top: 0;
+            font-size: 12px;
         }
     </style>
 </head>
